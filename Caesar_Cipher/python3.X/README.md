@@ -17,7 +17,10 @@ Note that the two lasts parameters are set to 0x20 and 0x7E by default : this is
 > caesar = Caesar(1)    #here, the key equals 1 and the range of available characters is set between 0x20 and 0x7E
 
 If you want to encrypt a message and print it, here is how it works : 
-> print(cesar.encrypt(message))
+> print(cesar.encrypt("Hello World !"))
 
 Do you want to decrypt the message ? This is the same process :
-> print(cesar.decrypt(message))
+> print(cesar.decrypt("Hello World !"))
+
+Finally, if you want to see the available list of characters, you can simply do:
+> print(cesar.availableChars())
