@@ -53,3 +53,19 @@ class Caesar:
 		This available chars list is set from self.min_char and self.max_char
 		"""
 		return "".join([chr(i) for i in range(self.min_char,self.max_char+1)])
+	
+	def updateKey(self,key):
+		"""
+		This method takes in parameter a key value and replaces the old one. 
+		"""
+		try:
+			self.key = int(key)
+			max_value = self.max_char - self.min_char + 1
+			assert max_value >= self.key >= -max_value 
+		except ValueError:
+			print("[!] The caesar key must be an integer !")
+			exit()
+		except AssertionError:
+			print("[!] The caesar key value must be between {} and {} !".format(-max_value,max_value))
+			exit()
+		self.key = key
