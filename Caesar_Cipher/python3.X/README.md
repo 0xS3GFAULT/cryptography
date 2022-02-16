@@ -25,4 +25,5 @@ Do you want to decrypt the message ? This is the same process :
 Finally, if you want to see the available list of characters, you can simply do:
 > print(cesar.availableChars())
 
+##
 Do not hesitate to contact me if there are things to improve :smiley:
