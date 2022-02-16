@@ -7,7 +7,7 @@
 ## **How to use this module ?**
 
 Firstly, you must import it with : 
-> import caesar
+> from caesar import Caesar
 
 Then, you need to initialize the Caesar object :<br>
 The first parameter is an integer that represents the key value, which must be in the range of available characters.<br>
@@ -21,6 +21,9 @@ If you want to encrypt a message and print it, here is how it works :
 
 Do you want to decrypt the message ? This is the same process :
 > print(caesar.decrypt("Hello World !"))
+
+Instead of creating other objects, you can change the key value using updateKey method. It takes in parameter the new key : 
+> caesar.updateKey(2)   #here, the key equals 2
 
 Finally, if you want to see the available list of characters, you can simply do:
 > print(caesar.availableChars())
