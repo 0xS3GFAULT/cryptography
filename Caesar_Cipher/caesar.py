@@ -17,7 +17,7 @@ class Caesar:
 		try:
 			self.min_char = int(min_char)
 			self.max_char = int(max_char)
-			assert min_char >= 0x20 and max_char >= 0x20 and (max_char != min_char)
+			assert (min_char >= 0x20) and (max_char >= 0x20) and (max_char != min_char)
 		except ValueError:
 			print("[!] The limit values of range of characters must be set as integers !")
 			exit()
